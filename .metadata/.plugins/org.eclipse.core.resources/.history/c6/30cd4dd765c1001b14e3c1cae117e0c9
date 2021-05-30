@@ -1,0 +1,27 @@
+package com.zikrullah.App;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+//		<-------------XML way of configuration------------------------->
+//        ApplicationContext context = new ClassPathXmlApplicationContext("NewFile.xml");
+//        
+//        Vehicle obj = (Vehicle) context.getBean("vehicle");
+//        obj.running();
+    	
+//		<--------------Annotation configuration---------------------------->
+    	ApplicationContext context = new ClassPathXmlApplicationContext("NewFile.xml");
+    	Vehicle obj = (Vehicle) context.getBean("car");
+    	obj.running();
+    	
+    }
+}
+

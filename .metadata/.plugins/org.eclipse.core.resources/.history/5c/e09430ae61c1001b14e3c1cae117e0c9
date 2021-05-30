@@ -1,0 +1,5 @@
+package com.zikrullah.App;
+
+class Car implements Vehicle{
+	
+}
