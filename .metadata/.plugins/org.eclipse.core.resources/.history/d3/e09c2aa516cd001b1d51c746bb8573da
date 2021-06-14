@@ -11,8 +11,6 @@ import java.util.*;
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println("this is master");
-		System.out.println("this is dev");
 		Scanner in = new Scanner(System.in);
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/zikrullah/jdbc/employee/empconfig.xml");
 		
