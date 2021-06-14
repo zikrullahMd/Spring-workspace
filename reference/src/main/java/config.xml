@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context = "http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<bean name="address" class="com.zikrullah.reference.Address">
+		<property name="house_no" value="14"></property>
+		<property name="locality" value="Greenwoods"></property>
+		<property name="city" value="Gagillapur"></property>
+		<property name="state" value="Telangana"></property>
+		<property name="country" value="India"></property>
+	</bean>
+	
+	<bean name="student" class="com.zikrullah.reference.Student">
+		<property name="name" value="Zikrullah"></property>
+		<property name="rollno" value="100"></property>
+		<property name="section" value="B"></property>
+		<property name="addr">
+			<ref bean="address"/>
+		</property>
+	</bean>
+	
+</beans>

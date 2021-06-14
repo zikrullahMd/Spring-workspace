@@ -1,7 +1,0 @@
-package com.zikrullah.App;
-
-public class Bike implements Vehicle{
-	public void running() {
-		System.out.println("The bike is running");
-	}
-}

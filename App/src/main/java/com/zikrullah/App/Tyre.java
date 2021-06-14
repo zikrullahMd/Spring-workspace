@@ -1,4 +1,5 @@
 package com.zikrullah.App;
+import java.util.*;
 
 public class Tyre {
 	private String brand;
@@ -18,8 +19,7 @@ public class Tyre {
 
 	@Override
 	public String toString() {
+		ArrayList<Integer> list = new ArrayList<Integer>();
 		return "Tyre [brand=" + brand + "]";
 	}
-	
-	
 }
