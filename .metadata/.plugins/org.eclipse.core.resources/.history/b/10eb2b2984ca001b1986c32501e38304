@@ -1,0 +1,5 @@
+package com.zikrullah.springjdbc;
+
+public class Student {
+
+}

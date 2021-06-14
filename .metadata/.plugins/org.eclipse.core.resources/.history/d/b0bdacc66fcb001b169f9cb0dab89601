@@ -1,0 +1,28 @@
+package com.zikrullah.springjdbc;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.jdbc.core.JdbcTemplate;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        ApplicationContext context = new ClassPathXmlApplicationContext("com/zikrullah/springjdbc/config.xml");
+        
+        JdbcTemplate data = context.getBean("JdbcTemplate",JdbcTemplate.class);
+        
+        String query = "INSERT INTO student(sid,name,address) VALUES (106,\"dheeraj\",\"koa\")";
+        String query2 = "INSERT INTO student(sid,name,address) VALUES (110,\"MAGADHEERA\",\"MADADH\")";
+        
+        int res = data.update(query);
+        
+        int res1 = data.update(query2);
+        
+        System.out.println("number of rows "+res);
+    }
+}

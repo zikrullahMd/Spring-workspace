@@ -1,0 +1,10 @@
+package com.zikrullah.jdbc.employee.entity;
+
+public class Employee {
+	
+	private int sid;
+	private String name;
+	private String role;
+	private String project;
+
+}

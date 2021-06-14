@@ -1,0 +1,16 @@
+package com.zikrullah.jdbc.employee;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.zikrullah.jdbc.employee.entity.Employee;
+
+public class Main {
+
+	public static void main(String[] args) {
+		ApplicationContext context = new ClassPathXmlApplicationContext("com.zikrullah.jdbc.employee.config.xml");
+		
+		EmployeeImp e = context.getBean("employeedao",EmployeeImp.class);
+	}
+
+}

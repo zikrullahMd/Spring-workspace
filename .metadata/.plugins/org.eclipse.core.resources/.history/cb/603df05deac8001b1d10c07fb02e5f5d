@@ -1,0 +1,8 @@
+package com.springcore.sterotype.annotations;
+
+ 
+public class Student {
+	private String name;
+	private int rollno;
+	private Course course;
+}

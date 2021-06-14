@@ -1,0 +1,7 @@
+package com.zikrullah.jdbc.employee.dao;
+
+public interface EmployeeInt {
+	public int insert() {
+		return 0;
+	}
+}

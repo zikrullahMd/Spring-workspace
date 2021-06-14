@@ -1,0 +1,45 @@
+package com.zikrullah.jdbc.employee;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.zikrullah.jdbc.employee.dao.EmployeeImp;
+import com.zikrullah.jdbc.employee.entity.Employee;
+
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		ApplicationContext context = new ClassPathXmlApplicationContext("com/zikrullah/jdbc/employee/empconfig.xml");
+		
+		EmployeeImp e = context.getBean("employeedao",EmployeeImp.class);
+		
+		Employee emp = new Employee();
+		
+		System.out.println("Press 1 to insert or Press 2 to update");
+		
+		int n = in.nextInt();
+		
+		switch(n) {
+		case 1 : {
+			int id = in.nextInt();
+			String name = in.next();
+			String role = in.next();
+			String project = in.next();
+			emp.setSid(id);
+			emp.setName(name);
+			emp.setRole(role);
+			emp.setProject(project);
+			System.out.println("Insert "+e.insert(emp)+" Success !!!");
+			break;
+		}
+		case 2:{
+			
+		}
+		}
+		
+	}
+
+}

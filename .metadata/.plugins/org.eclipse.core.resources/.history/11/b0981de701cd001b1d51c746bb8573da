@@ -1,0 +1,7 @@
+package com.zikrullah.jdbc.employee.dao;
+
+import com.zikrullah.springjdbc.entity.Student;
+
+public interface EmployeeInt {
+	public int insert(Student student);
+}

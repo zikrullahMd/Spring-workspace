@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context = "http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+   
+   <bean name = "student" class = "com.springcore.Student">
+   	<property name="name" value="Zikrullah" />
+   	<property name="rollNo" value="100" />
+   </bean>
+   
+	<bean name="student" class="com.springcore.practice.Student">
+		<property name="proname" value="smartbrain" />
+		<property name="domain" value="AI"/>
+		<property name="technologies">
+	   		<list>
+	   			<value>Java</value>
+	   			<value>ReactJs</value>
+	   			<value>CSS</value>
+	   			<value>HTML</value>
+	   			<value>MySql</value>
+	   			<value>Express.js</value>
+	   			<value>Maven</value>
+	   		</list>
+   		</property>
+	</bean>
+	
+	
+</beans>

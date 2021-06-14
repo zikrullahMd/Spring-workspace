@@ -1,0 +1,5 @@
+package com.zikrullah.jdbc.employee.entity;
+
+public class Employee {
+
+}
